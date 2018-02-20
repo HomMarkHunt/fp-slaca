@@ -1,1 +1,1 @@
-def uncurry[A, B, C](f: A => B => C): (A, B) => C = f(a: A)(b: B)
+def uncurry[A, B, C](f: A => B => C): (A, B) => C = f(_: A)(_: B)
